@@ -4,7 +4,7 @@
 using namespace std;
 
 Point::Point(double x, double y): x(x), y(y){}
-Point::Point(Point &other): x(other.x), y(other.y){};
+Point::Point(const Point &other): x(other.x), y(other.y){};
 double Point::getX(){
     return x;
 }

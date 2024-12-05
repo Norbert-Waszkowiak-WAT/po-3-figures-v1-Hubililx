@@ -6,7 +6,7 @@ using namespace std;
 
 Line::Line(Point a, Point b): a(a), b(b){}
 
-Line::Line(Line &other): a(other.a), b(other.b){};
+Line::Line(const Line &other): a(other.a), b(other.b){};
 
 bool Line::equals(Line &other){
     return a.equals(other.a) && b.equals(other.b);

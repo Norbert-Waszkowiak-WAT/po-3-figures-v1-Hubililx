@@ -8,7 +8,7 @@ using namespace std;
 
 Triangle::Triangle(Point a, Point b, Point c): a(a), b(b), c(c){}
 
-Triangle::Triangle(Triangle &other): a(other.a), b(other.b), c(other.c){};
+Triangle::Triangle(const Triangle &other): a(other.a), b(other.b), c(other.c){};
 
 bool Triangle::equals(Triangle &other){
     return a.equals(other.a) && b.equals(other.b) && c.equals(other.c);

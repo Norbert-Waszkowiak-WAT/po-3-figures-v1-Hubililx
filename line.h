@@ -10,7 +10,7 @@ private:
     Point b;
 public:
     Line (Point a, Point b);
-    Line(Line &other);
+    Line(const Line &other);
     bool equals(Line &other);
     void flip();
     void move(double x, double y);

@@ -8,7 +8,7 @@ using namespace std;
 
 Quadrilateral::Quadrilateral(Point a, Point b, Point c, Point d): a(a), b(b), c(c), d(d){}
 
-Quadrilateral::Quadrilateral(Quadrilateral &other): a(other.a), b(other.b), c(other.c), d(other.d){};
+Quadrilateral::Quadrilateral(const Quadrilateral &other): a(other.a), b(other.b), c(other.c), d(other.d){};
 
 bool Quadrilateral::equals(Quadrilateral &other){
     return a.equals(other.a) && b.equals(other.b) && c.equals(other.c) && d.equals(other.d);

@@ -9,7 +9,7 @@ private:
     double y;
 public:
     Point(double x, double y);
-    Point(Point &other);
+    Point(const Point &other);
     bool equals(Point &other);
     string toString();
     double getX();
